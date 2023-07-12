@@ -2,7 +2,15 @@ import breeds from "./backup.json"
 
 
 const SearchDogs = () => {
-   console.log(breeds.message)
+   return (
+    <>
+        <form>
+            <input>
+                
+            </input>
+        </form>
+    </>
+   )
 };
 
 export default SearchDogs;
