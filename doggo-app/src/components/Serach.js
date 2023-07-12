@@ -3,13 +3,8 @@ import breeds from "./backup.json"
 
 const SearchDogs = () => {
    return (
-    <>
-        <form>
-            <input>
-                
-            </input>
-        </form>
-    </>
+    <div>
+    </div>
    )
 };
 

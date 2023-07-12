@@ -1,8 +1,17 @@
+import React, { useState } from "react";
+
+
 const SearchForm = () => {
-    const [breed] = useState(" ")
+    const [breed, setBreed] = useState(" ")
     return (
         <from>
-            <input type="text" value={breed} onChange={(e) => (e.target.value)}/>
+            <label>
+            Wpisz rasę, której szukasz: <br/>
+                <input type="text" value={breed} onChange={e => setBreed(e.target.value)}/>
+            </label>
+                <input type="submit" value="Szukaj"/>
         </from>
     )
 }
+
+export default SearchForm
