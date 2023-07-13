@@ -6,6 +6,7 @@ const Search = ({changeBreed}) => {
     const handleSubmit = (e) => {
     e.preventDefault();
     changeBreed(breed)
+    console.log(breed)
   };
 
   const handleChange = (e) => {

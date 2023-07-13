@@ -2,7 +2,7 @@ import React from "react";
 import { breedsArray } from "./DogsList";
 
 const Dog = ({breed}) => {
-    String(breed)
+    console.log(breed)
    if (breedsArray.includes(breed)){
         return (
             <div>

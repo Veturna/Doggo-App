@@ -7,12 +7,12 @@ const breedsArray = Object.keys(breeds.message);
 const DogsList = () => {
     const [breed, setBreed] = useState(" ")
 
-    const handleClick = () =>{
+    const handleClick = (clickedBreed) =>{
         console.log("Clicked")
-        setBreed(breed)
+        setBreed(clickedBreed)
     }
 
-    const list = breedsArray.map((element, index) => <li key={index} onClick={handleClick}>{element[0].toUpperCase() + element.slice(1)}</li>)
+    const list = breedsArray.map((element, index) => <li key={index} onClick={() => handleClick(element)}>{element[0].toUpperCase() + element.slice(1)}</li>)
 
     return (
         <div>
