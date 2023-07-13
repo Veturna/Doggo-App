@@ -1,6 +1,8 @@
 import {React, useState} from "react";
+import {Link} from "react-router-dom"
 import breeds from "./backup.json"
 import ShowDogs from "./ShowDogs";
+
 
 const breedsArray = Object.keys(breeds.message);
 
@@ -21,6 +23,7 @@ const DogsList = () => {
             {list}
             </ul>
             <ShowDogs breed={breed} />
+            <Link to="search">Poszukaj własnej rasy</Link>
         </div>
     )
 }

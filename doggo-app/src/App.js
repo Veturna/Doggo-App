@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import {HashRouter, Route, Routes} from "react-router-dom"
+
 import {DogsList} from "./components/DogsList";
 import Search from "./components/Search";
 import ShowDogs from "./components/ShowDogs";
@@ -14,9 +16,12 @@ const App = () => {
 
   return(
     <>
-      <DogsList/>
-      <Search changeBreed={changeBreed}/>
-      <ShowDogs breed={breed}/>
+    <HashRouter>
+      <Routes>
+      <Route path="/" element={<DogsList/>}/>
+      <Route path="search" element={<Search changeBreed={changeBreed}/>}/>
+      </Routes>
+    </HashRouter>
     </>
   )
 }

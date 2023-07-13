@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ShowDogs from "./ShowDogs";
 
 const Search = ({changeBreed}) => {
     const [breed, setBreed] = useState(" ")
@@ -20,6 +21,7 @@ const Search = ({changeBreed}) => {
         <input type="text" value={breed} onChange={handleChange} />
       </label>
       <input type="submit" value="Szukaj" />
+      <ShowDogs breed={breed}/>
     </form>
   );
 };
