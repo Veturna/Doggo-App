@@ -6,7 +6,7 @@ div.box {
 div.header {
     background-color: #FF862F;
     width: 100%;
-    height: 70vh;
+    height: 55vh;
 }
 
 div.headerElements {
@@ -158,11 +158,19 @@ h2 {
 
 .button:hover {
     background-color: #D8783A;
-    /* Ciemniejszy odcień pomarańczowego */
     color: white;
     text-decoration: none;
 }
 
 h3.is-size-4 {
     font-weight: bold;
+}
+
+div.not-found-elements {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
 }
