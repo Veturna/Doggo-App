@@ -1,7 +1,48 @@
-body {
+div.box {
     background-color: #FEF9EA;
 }
 
-div.box {
-    background-color: #FEF9EA;
+div.header {
+    background-color: #FF862F;
+    width: 100%;
+    height: 70vh;
+}
+
+div.headerElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+div.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 70vh;
+}
+
+img.dogPic {
+    height: 100%;
+}
+
+div.informationElements {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'HK Grotesk', sans-serif;
+    line-height: 60px;
+}
+
+button {
+    font-family: 'HK Grotesk', sans-serif;
+    line-height: 60px;
 }

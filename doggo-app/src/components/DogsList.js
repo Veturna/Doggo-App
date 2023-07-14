@@ -1,7 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import breeds from "./backup.json"
+import Information from "./Information";
 
 
 const breedsArray = Object.keys(breeds.message);
@@ -23,6 +24,8 @@ const DogsList = ({setBreed}) => {
     const fourthColumnList = list.slice(75)
 
     return (
+        <>
+        <Information />
         <div className="box">
             <div className="content is-normal">
             <div className="columns">
@@ -50,6 +53,7 @@ const DogsList = ({setBreed}) => {
             </div>
             </div>
         </div> 
+        </>
     )
 }
 
