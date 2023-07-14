@@ -10,7 +10,7 @@ const Information = () => {
                 <div className="content">
                     <h3>Kochamy pieski różne, śmieszne i nieśmieszne, kochane.
                     Dlatego stworzyliśmy stronę, która jest zbiorem wszystkich istniejących ras.</h3>
-                    <h3>Klinknij w link poniżej i przekonaj się jak działa nasza wyszukiwarka.</h3>
+                    <h3>Klinknij w przycisk poniżej i przekonaj się jak działa nasza wyszukiwarka.</h3>
                     <h3>A jak nie znasz jeszcze żadnej rasy to poniżej znajdziesz specjalną listę</h3>
                     <button><Link to={"/search"}>Znajdź swoją ulubioną rasę</Link></button>
                 </div>
