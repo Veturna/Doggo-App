@@ -1,15 +1,15 @@
-div.box {
+.box {
     background-color: #FEF9EA;
     position: relative;
 }
 
-div.header {
+.header {
     background-color: #FF862F;
     width: 100%;
     height: 55vh;
 }
 
-div.headerElements {
+.headerElements {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ div.headerElements {
     width: 100%;
 }
 
-div.information {
+.information {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,11 +26,11 @@ div.information {
     height: 70vh;
 }
 
-img.dogPic {
+.dogPic {
     height: 100%;
 }
 
-div.informationElements {
+.informationElements {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -63,12 +63,12 @@ button {
     margin-top: 6em;
 }
 
-ul.custom-bullet {
+.custom-bullet {
     list-style-type: none;
     padding-left: 1em;
 }
 
-ul.custom-bullet>li:before {
+.custom-bullet>li:before {
     content: "✦";
     color: #C4864D;
     display: inline-block;
@@ -77,50 +77,44 @@ ul.custom-bullet>li:before {
     font-family: 'HK Grotesk', sans-serif;
 }
 
-div.break {
+.break {
     width: 100%;
     height: 3vh;
     background-color: #F48B48;
 }
 
-img.pumpkin-dog {
+.pumpkin-dog {
     right: 0;
     top: 60%;
     position: absolute;
 }
 
-div.field {
-    margin-top: 3em;
-}
-
-img.wink-dog {
-    height: 100%;
-}
-
-div.field {
+.field {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    margin-top: 3em;
+    font-family: 'HK Grotesk', sans-serif;
 }
 
-div.button-break {
+.button-break {
     width: 100%;
     height: 1vh;
 }
 
-div.description {
+.description {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 4em;
 }
 
-div.description p {
+.description p {
     max-width: 80%;
 }
 
-div.description img {
+.description img {
     max-width: 10%;
 }
 
@@ -162,15 +156,16 @@ h2 {
     text-decoration: none;
 }
 
-h3.is-size-4 {
+.is-size-4 {
     font-weight: bold;
 }
 
-div.not-found-elements {
+.not-found-elements {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     gap: 15px;
+    font-family: 'HK Grotesk', sans-serif;
 }

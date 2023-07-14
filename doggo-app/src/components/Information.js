@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 const Information = () => {
     return (
         <div className="information">
-                    <img className="dogPic"src="/PinkDogs.svg" alt="dog-on-pink-background"/>
+            <img className="dogPic"src="/PinkDogs.svg" alt="dog-on-pink-background"/>
                 <div className= "informationElements">
                     <h3 className="is-size-4">Kochamy pieski różne, śmieszne i nieśmieszne, kochane.
                     Dlatego stworzyliśmy stronę, która jest zbiorem wszystkich istniejących ras.</h3>
@@ -13,7 +13,7 @@ const Information = () => {
                     <h3 className="is-size-4">A jak nie znasz jeszcze żadnej rasy to poniżej znajdziesz specjalną listę</h3>
                     <Link to={"/search"} className="button"><strong>Znajdź swoją ulubioną rasę</strong></Link>
                 </div>
-            </div>
+        </div>
     )
 }
 

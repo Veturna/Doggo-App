@@ -7,14 +7,13 @@ const Header = () => {
         <>
             <div className="header">
                 <div className="headerElements">
-                <Link to="/">
-                    <img src="/Doggo.svg" alt="logo" width="400px"/>
+                    <Link to="/">
+                        <img src="/Doggo.svg" alt="logo" width="400px"/>
                     </Link>
                     <img src="/DogPic.svg" alt="dog" width="400"/>
                 </div> 
             </div>
         </>
-
     )
 }
     
