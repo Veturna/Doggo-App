@@ -29,11 +29,10 @@ const DogsList = ({setBreed}) => {
         <Information />
         <Break/>
         <div className="box">
+        <h2 class="is-size-1"><strong>Lista ras</strong></h2>
             <div className="columns">
             <div className="column">
                 <ul className="custom-bullet">
-                    <img src="/flower-dog.png" alt="flower-dog" />
-                    <h2 class="is-size-3"><strong>Lista ras</strong></h2>
                         {firstColumnList}
                 </ul>
             </div> 

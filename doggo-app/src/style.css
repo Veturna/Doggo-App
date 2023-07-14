@@ -43,6 +43,11 @@ h3 {
     line-height: 60px;
 }
 
+p {
+    font-family: 'HK Grotesk', sans-serif;
+    line-height: 35px;
+}
+
 button {
     font-family: 'HK Grotesk', sans-serif;
     background-color: #F48B48;
@@ -67,6 +72,7 @@ ul.custom-bullet>li:before {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+    font-family: 'HK Grotesk', sans-serif;
 }
 
 div.break {
@@ -99,4 +105,36 @@ div.field {
 div.button-break {
     width: 100%;
     height: 1vh;
+}
+
+div.description {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 4em;
+}
+
+div.description p {
+    max-width: 80%;
+}
+
+div.description img {
+    max-width: 10%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    font-family: 'HK Grotesk', sans-serif;
+}
+
+.custom-bullet li {
+    transition: all 0s ease;
+    cursor: pointer;
+}
+
+.custom-bullet li:hover {
+    font-weight: bold;
+    color: #EF8D32;
 }
