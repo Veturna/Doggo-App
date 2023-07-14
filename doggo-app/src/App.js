@@ -2,26 +2,30 @@ import { useState } from "react";
 
 import {HashRouter, Route, Routes} from "react-router-dom"
 
-import {DogsList} from "./components/DogsList";
+import {DogsList, breedsArray} from "./components/DogsList";
+import Footer from "./components/Footer";
 import Search from "./components/Search";
-import ShowDogs from "./components/ShowDogs";
+import ShowDog from "./components/ShowDog";
+import Header from "./components/Header"
+
+import './style.css';
+
 
 
 const App = () => {
-    const [breed, setBreed] = useState(" ")
-
-    const changeBreed = (searchingBreed) => {
-        setBreed(searchingBreed)
-    }
+  const [breed, setBreed] = useState("")
 
   return(
     <>
     <HashRouter>
+      <Header/>
       <Routes>
-      <Route path="/" element={<DogsList/>}/>
-      <Route path="search" element={<Search changeBreed={changeBreed}/>}/>
+        <Route path="/" element={<DogsList setBreed={setBreed}/>}/>
+        <Route path="/search" element={<Search clickedBreed={breed} changeBreed={setBreed}/>}/>
       </Routes>
+      <Footer/>
     </HashRouter>
+
     </>
   )
 }
