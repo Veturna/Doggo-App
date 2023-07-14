@@ -2,11 +2,10 @@ import React from "react";
 import { breedsArray } from "./DogsList";
 
 const ShowDog = ({breed}) => {
-    console.log(typeof breed)
         return (
             <div className="box">
                 <div className="description">
-                    <h3 className="is-size-3">Rasa: <strong>{breed}</strong></h3>
+                    <h3 className="is-size-3">Rasa: <strong>{breed.charAt(0).toUpperCase() + breed.slice(1)}</strong></h3>
                     <article>
                        <p> Ten pies to wierny i przyjacielski czworonóg, który świetnie czuje się w roli rodzinnego
                         towarzysza. </p>

@@ -16,7 +16,7 @@ const Search = ({changeBreed, clickedBreed}) => {
   };
 
   const handleChange = (e) => {
-    setInputBreed(e.target.value);
+    setInputBreed(e.target.value.toLowerCase());
   };
 
   return (
@@ -34,7 +34,7 @@ const Search = ({changeBreed, clickedBreed}) => {
         </div>
     </form>
     <div>
-    {breedsArray.includes(clickedBreed || inputBreed) ? <ShowDog breed={inputBreed}/> : <p>Nie mamy takiego psiaka w bazie. Spróbuj wyszukać inną rasę</p>}
+    {breedsArray.includes(clickedBreed || inputBreed) ? <ShowDog breed={inputBreed}/> : null}
     </div>
     
     </>
