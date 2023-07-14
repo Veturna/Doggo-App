@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from "react"
+import { useNavigate} from "react-router-dom"
+
 import { breedsArray } from "./DogsList"
+import Navigation from "./Navigation"
 import ShowDog from "./ShowDog"
 
 
 const Search = ({changeBreed, clickedBreed}) => {
     const [inputBreed, setInputBreed] = useState(clickedBreed)
+    const navigate = useNavigate()
 
     useEffect(() => {
     setInputBreed(clickedBreed)
@@ -13,6 +17,9 @@ const Search = ({changeBreed, clickedBreed}) => {
     const handleSubmit = (e) => {
     e.preventDefault()
     changeBreed(inputBreed)
+    if (breedsArray.includes(inputBreed) === false){
+        navigate("/wrong-results")
+    }
   }
 
   const handleChange = (e) => {
@@ -35,8 +42,9 @@ const Search = ({changeBreed, clickedBreed}) => {
           </div>
       </form>
       <div>
-        {breedsArray.includes(clickedBreed || inputBreed) ? <ShowDog breed={inputBreed}/> : null}
+        {inputBreed && breedsArray.includes(inputBreed) ? <ShowDog breed={inputBreed}/> : null}
       </div>
+      <Navigation/>
     </>
   )
 }

@@ -4,7 +4,10 @@ const ShowDog = ({breed}) => {
         return (
             <div className="box">
                 <div className="description">
-                    <h3 className="is-size-3">Rasa: <strong>{breed.charAt(0).toUpperCase() + breed.slice(1)}</strong></h3>
+                    <div>
+                    <h3 className="is-size-3">Rasa: </h3>
+                    <h3 className="is-size-4"><strong>{breed.charAt(0).toUpperCase() + breed.slice(1)}</strong></h3>
+                    </div>
                     <article>
                         <p>Ten pies to wierny i przyjacielski czworonóg, który świetnie czuje się w roli rodzinnego
                         towarzysza.</p>

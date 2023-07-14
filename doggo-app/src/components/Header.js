@@ -10,7 +10,9 @@ const Header = () => {
                     <Link to="/">
                         <img src="/Doggo.svg" alt="logo" width="400px"/>
                     </Link>
+                    <Link to="/">
                     <img src="/DogPic.svg" alt="dog" width="400"/>
+                    </Link>
                 </div> 
             </div>
         </>

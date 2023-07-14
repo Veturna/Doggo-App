@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useNavigate} from "react-router-dom"
 
 import breeds from "./backup.json"
 import Break from "./Break"
 import Information from "./Information"
+import Navigation from "./Navigation";
 
 
 const breedsArray = Object.keys(breeds.message)
@@ -53,6 +54,7 @@ const DogsList = ({setBreed}) => {
                 </div>
                 <img className="pumpkin-dog" src="/pumpkin-dog.png" alt="pumpkin-dog"/>
             </div> 
+            <Navigation/>
         </>
     )
 }
