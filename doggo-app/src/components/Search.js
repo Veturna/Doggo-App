@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { breedsArray } from "./DogsList";
 import ShowDog from "./ShowDog";
+import Break from "./Break";
 
 const Search = ({changeBreed, clickedBreed}) => {
     const [inputBreed, setInputBreed] = useState(clickedBreed)
@@ -19,20 +20,24 @@ const Search = ({changeBreed, clickedBreed}) => {
   };
 
   return (
-    <div>
+    <>
     <form  className="box" onSubmit={handleSubmit}>
         <div className="field ">
-            <label  className="label">
+            <label  className="label is-size-3">
                 Wpisz rasę, której szukasz: 
             </label><br />                                                                                                                                                                                          
             <div className="control">
-                <input className="input is-info is-normal is-rounded " type="text" value={inputBreed} onChange={handleChange} />
-            </div>
+                <input className="input is-warning is-medium is-rounded is-hovered " type="text" value={inputBreed} onChange={handleChange} />
+            </div> 
+            <div className="button-break"></div>
+            <input className="button is-warning is-dark is-medium" type="submit" value="Szukaj" />   
         </div>
-        <input className="button is-info " type="submit" value="Szukaj" />
     </form>
+    <div>
     {breedsArray.includes(clickedBreed || inputBreed) ? <ShowDog breed={inputBreed}/> : <p>Nie mamy takiego psiaka w bazie. Spróbuj wyszukać inną rasę</p>}
     </div>
+    
+    </>
   );
 };
 
