@@ -8,10 +8,12 @@ import ShowDog from "./ShowDog"
 
 const Search = ({changeBreed, clickedBreed}) => {
     const [inputBreed, setInputBreed] = useState(clickedBreed)
+    const [showDog, setShowDog] = useState(false)
     const navigate = useNavigate()
 
     useEffect(() => {
     setInputBreed(clickedBreed)
+    setShowDog(true)
   }, [clickedBreed])
 
     const handleSubmit = (e) => {
@@ -19,11 +21,14 @@ const Search = ({changeBreed, clickedBreed}) => {
     changeBreed(inputBreed)
     if (breedsArray.includes(inputBreed) === false){
         navigate("/wrong-results")
+    } else {
+      setShowDog(true)
     }
   }
 
   const handleChange = (e) => {
     setInputBreed(e.target.value.toLowerCase())
+    setShowDog(false)
   }
 
   return (
@@ -42,7 +47,7 @@ const Search = ({changeBreed, clickedBreed}) => {
           </div>
       </form>
       <div>
-        {inputBreed && breedsArray.includes(inputBreed) ? <ShowDog breed={inputBreed}/> : null}
+        {showDog && inputBreed && breedsArray.includes(inputBreed) ? <ShowDog breed={inputBreed}/> : null}
       </div>
       <Navigation/>
     </>
