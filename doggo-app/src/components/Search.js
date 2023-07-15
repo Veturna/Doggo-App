@@ -37,7 +37,7 @@ const Search = ({changeBreed, clickedBreed}) => {
           <div className="field">
               <label  className="label is-size-3">
               Wpisz rasę, której szukasz: 
-              </label><br />                                                                                                                                                                                          
+              </label>                                                                                                                                                                                        
               <div className="control">
                 <input className="input is-warning is-medium is-rounded is-hovered " type="text" value={inputBreed} onChange={handleChange}/>
               </div> 

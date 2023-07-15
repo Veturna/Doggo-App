@@ -1,10 +1,10 @@
-import React, {useEffect} from "react";
-import { useNavigate} from "react-router-dom"
+import React from "react"
+import { useNavigate } from "react-router-dom"
 
 import breeds from "./backup.json"
 import Break from "./Break"
 import Information from "./Information"
-import Navigation from "./Navigation";
+import Navigation from "./Navigation"
 
 
 const breedsArray = Object.keys(breeds.message)

@@ -6,12 +6,12 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                <div className="headerElements">
+                <div className="header-elements">
                     <Link to="/">
-                        <img src="/Doggo.svg" alt="logo" width="400px"/>
+                        <img src="/doggo.svg" alt="logo" width="400px"/>
                     </Link>
                     <Link to="/">
-                    <img src="/DogPic.svg" alt="dog" width="400"/>
+                    <img src="/dog-pic.svg" alt="dog" width="400"/>
                     </Link>
                 </div> 
             </div>

@@ -9,7 +9,7 @@
     height: 55vh;
 }
 
-.headerElements {
+.header-elements {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,11 +26,11 @@
     height: 70vh;
 }
 
-.dogPic {
+.dog-pic {
     height: 100%;
 }
 
-.informationElements {
+.information-elements {
     flex-direction: column;
     align-items: center;
     justify-content: center;

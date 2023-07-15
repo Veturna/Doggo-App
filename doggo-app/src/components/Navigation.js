@@ -1,12 +1,12 @@
 import React from "react"
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom'
 
 
 const Navigation = () => {
     
     const location = useLocation();
-    const dog = location.pathname === "/";
-    const look = location.pathname === "/search";
+    const dog = location.pathname === "/"
+    const look = location.pathname === "/search"
 
     return (
             <div className="navigation">
